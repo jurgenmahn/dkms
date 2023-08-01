@@ -1,0 +1,43 @@
+From f94bec9339396f41651ccf8446eaf1e761e390c4 Mon Sep 17 00:00:00 2001
+From: Jurgen Mahn <jurgen@mahn.it>
+Date: Tue, 1 Aug 2023 10:09:53 +0200
+Subject: [PATCH] Added support for MediaTek MT7922 Bluetooth device
+ USB_DEVICE(0x7922, 0x14c3) \ Asus Zenbook UM3402 \   pci device: name =
+ 0000:01:00.0 \     path = /devices/pci0000:00/0000:00:01.1/0000:01:00.0 \
+ modalias = "pci:v000014C3d00007922sv00001A3Bsd00005300bc02sc80i00" \
+ class = 0x28000 \     vendor = 0x14c3 \     device = 0x7922 \     subvendor =
+ 0x1a3b \     subdevice = 0x5300 \     irq = 91 \     res[0] = 0xe0300000
+ 0xe03fffff 0x14220c \     res[2] = 0xfcf00000 0xfcf07fff 0x140204 \
+ config[64] \
+
+---
+ drivers/bluetooth/btusb.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+diff --git a/drivers/bluetooth/btusb.c b/drivers/bluetooth/btusb.c
+index 2ad4efdd9e40..8c27416994db 100644
+--- a/drivers/bluetooth/btusb.c
++++ b/drivers/bluetooth/btusb.c
+@@ -27,7 +27,7 @@
+ #include "btrtl.h"
+ #include "btmtk.h"
+
+-#define VERSION "0.8"
++#define VERSION "0.8.2"
+
+ static bool disable_scofix;
+ static bool force_scofix;
+@@ -558,7 +558,10 @@ static const struct usb_device_id blacklist_table[] = {
+ 	{ USB_DEVICE(0x043e, 0x3109), .driver_info = BTUSB_MEDIATEK |
+ 						     BTUSB_WIDEBAND_SPEECH |
+ 						     BTUSB_VALID_LE_STATES },
+-
++/* Additional MediaTek MT7922 Bluetooth devices (Asus Zenbook UM3402) */
++	{ USB_DEVICE(0x7922, 0x14c3), .driver_info = BTUSB_MEDIATEK |
++						     BTUSB_WIDEBAND_SPEECH |
++						     BTUSB_VALID_LE_STATES },
+ 	/* Additional MediaTek MT7921 Bluetooth devices */
+ 	{ USB_DEVICE(0x0489, 0xe0c8), .driver_info = BTUSB_MEDIATEK |
+ 						     BTUSB_WIDEBAND_SPEECH |
+--
+2.39.2

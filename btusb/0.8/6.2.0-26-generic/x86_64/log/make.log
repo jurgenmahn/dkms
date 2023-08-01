@@ -1,0 +1,142 @@
+DKMS make.log for btusb-0.8 for kernel 6.2.0-26-generic (x86_64)
+Tue Aug  1 18:03:33 UTC 2023
+make: Entering directory '/usr/src/linux-headers-6.2.0-26-generic'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: x86_64-linux-gnu-gcc-12 (Ubuntu 12.2.0-17ubuntu1) 12.2.0
+  You are using:           gcc-12 (Ubuntu 12.3.0-1ubuntu1~23.04) 12.3.0
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_vhci.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_ldisc.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_serdev.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_h4.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_bcsp.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_ll.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_ath.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_h5.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_intel.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_bcm.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_qca.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_ag6xx.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_mrvl.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bcm203x.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_bcm4377.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bpa10x.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bfusb.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/dtl1_cs.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bt3c_cs.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bluecard_cs.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btusb.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btsdio.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btintel.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/ath3k.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmrvl_main.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmrvl_debugfs.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmrvl_sdio.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtksdio.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtkuart.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btbcm.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btrtl.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btqca.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtk.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/virtio_bt.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_nokia.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btrsi.o
+  LD [M]  /var/lib/dkms/btusb/0.8/build/hci_uart.o
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmrvl.o
+  MODPOST /var/lib/dkms/btusb/0.8/build/Module.symvers
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_vhci.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_uart.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bcm203x.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_bcm4377.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bpa10x.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bfusb.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/dtl1_cs.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bt3c_cs.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/bluecard_cs.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btusb.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btsdio.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btintel.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/ath3k.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmrvl.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmrvl_sdio.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtksdio.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtkuart.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btbcm.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btrtl.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btqca.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btmtk.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/virtio_bt.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/btrsi.mod.o
+  CC [M]  /var/lib/dkms/btusb/0.8/build/hci_nokia.mod.o
+  LD [M]  /var/lib/dkms/btusb/0.8/build/hci_vhci.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/hci_vhci.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/hci_vhci.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/bcm203x.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/hci_bcm4377.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/bpa10x.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/bfusb.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/bcm203x.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/bcm203x.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/bt3c_cs.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/bluecard_cs.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btusb.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/bt3c_cs.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/bt3c_cs.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btsdio.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/bluecard_cs.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/bluecard_cs.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/bpa10x.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/bpa10x.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/hci_bcm4377.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/hci_bcm4377.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btsdio.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btusb.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btsdio.ko due to unavailability of vmlinux
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btusb.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/ath3k.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmrvl.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmrvl_sdio.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmtksdio.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/bfusb.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/bfusb.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/hci_uart.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btintel.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/ath3k.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/ath3k.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btmrvl_sdio.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btmrvl_sdio.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btmrvl.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btmrvl.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btintel.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btintel.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btmtksdio.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btmtksdio.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/hci_uart.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/hci_uart.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/dtl1_cs.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/dtl1_cs.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/dtl1_cs.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btqca.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmtk.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btqca.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btqca.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btmtk.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btmtk.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btrtl.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btrtl.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btrtl.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/virtio_bt.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/hci_nokia.ko
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btmtkuart.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/virtio_bt.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/virtio_bt.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btmtkuart.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btmtkuart.ko due to unavailability of vmlinux
+  BTF [M] /var/lib/dkms/btusb/0.8/build/hci_nokia.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/hci_nokia.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btrsi.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btrsi.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btrsi.ko due to unavailability of vmlinux
+  LD [M]  /var/lib/dkms/btusb/0.8/build/btbcm.ko
+  BTF [M] /var/lib/dkms/btusb/0.8/build/btbcm.ko
+Skipping BTF generation for /var/lib/dkms/btusb/0.8/build/btbcm.ko due to unavailability of vmlinux
+make: Leaving directory '/usr/src/linux-headers-6.2.0-26-generic'
